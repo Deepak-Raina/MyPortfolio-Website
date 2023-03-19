@@ -1,0 +1,304 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Header Styles */
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  #header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #header nav ul li {
+    margin-right: 2rem;
+  }
+  
+  #header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  #header nav ul li a {
+    font-weight: bold;
+  }
+  
+  /* Home Section Styles */
+  #home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya3NwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  #home .content {
+    max-width: 700px;
+  }
+  
+  #home h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  #home p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #skills {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  #skills .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #skills .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  #skills .section-title p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c757d;
+  }
+  
+  #skills .progress-wrapper {
+    margin-bottom: 30px;
+  }
+  
+  #skills .progress-wrapper h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #343a40;
+  }
+  
+  #skills .progress {
+    height: 20px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+  }
+  
+  #skills .progress-bar {
+    background-color: #007bff;
+    border-radius: 20px;
+    transition: width 0.6s ease;
+    text-align: right;
+  }
+  
+  #skills .progress-bar span {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #fff;
+  }
+  
+
+/* Projects Section Styles */
+#projects {
+padding: 6rem 0;
+}
+
+#projects h2 {
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.projects {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 2rem;
+justify-items: center;
+align-items: center;
+}
+
+.project {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.project img {
+transition: all 0.3s ease;
+}
+
+.project:hover img {
+transform: scale(1.1);
+}
+
+.project:hover .overlay {
+opacity: 1;
+}
+
+.project .overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: all 0.3s ease;
+}
+
+.project .overlay h3 {
+color: #fff;
+font-size: 1.5rem;
+text-align: center;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .contact-info h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  
+  .contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+  }
+  
+  .contact-item i {
+    font-size: 36px;
+    color: #1abc9c;
+    margin-right: 20px;
+  }
+  
+  .contact-item h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #148f77;
+  }
+  
+
+/* Footer Section Styles */
+#footer {
+text-align: center;
+padding: 2rem 0;
+background-color: #333;
+color: #fff;
+}  
